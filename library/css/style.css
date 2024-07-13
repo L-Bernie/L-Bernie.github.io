@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font: 'Poppins';
+    --bg-light: #fff;
+    --bg-dark:#141414;
+    --bg-main: #00b4d8;
+    --bg-footer: #2b68b8;
+    
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Use viewport height to center vertically */
+    background-color: var(--bg-main);
+    font-family: var(--font);
+    color: var(--bg-light);
+}
+
+.splash-screen h1 {
+    font-size: clamp(3rem, 5vw, 3.9rem); /* Adjusted font-size clamp values */
+}
+
+.text-container h1 {
+    display: none; /* Hide all h1 elements initially */
+}
+
+.text-container h1:first-child {
+    display: block; /* Show the first h1 element */
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .splash-screen {
+        max-width: clamp(400px, 40vw, 800px); /* Adjust width for larger screens, but clamp between 400px and 800px */
+    }
+}
