@@ -19,6 +19,7 @@ body, html {
     height: 100%;
     margin: 0;
     font-family: 'Poppins'; /* Ensure Poppins font is included */
+    cursor: url(cursor.png), auto;
 }
 
 .header {
